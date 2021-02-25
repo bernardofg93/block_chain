@@ -1,0 +1,150 @@
+.head-carriers {
+    background-image: url(../img/carrier/bacground-carrier.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.head-carriers .txt-carriers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-carriers h1 {
+   color: #03c0fe;
+   font-size: 100px;
+}
+
+.bar-carriers h1 {
+    color: #fff;
+}
+
+@media screen and (max-width: 764px) {
+    .head-carriers{
+        background-image: url(../img/carrier/bacground-carrier.jpg);
+        background-repeat: no-repeat; 
+        height: 50vh;
+    }
+    .head-carriers .txt-carriers h1 {
+        font-size: 40px;
+     }
+}
+
+
+/* Bar */
+
+.bar-carriers p {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.bar-carriers a {
+    padding:15px;
+    text-align: center;
+    width:30%;
+    border-radius: 28px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #03c0fe;
+    font-weight: bold;
+    color: #03c0fe;
+    margin-top: 2rem;
+}
+
+.bar-carriers a:hover{
+    background-color: var(--blue-bd);
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+
+.bar-carriers{
+    background-image: url(../img/bar-blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+/* responsive */
+@media screen and (max-width: 964px) {
+    .bar-carriers {
+        padding: 1rem;
+    }
+    .bar-carriers h1{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .bar-carriers a{
+        width: 90%;
+        font-size: 12px;
+    }
+}
+
+/* area "Do the right thing for Carriers" */
+.text-carriers {
+   display: grid;
+   grid-template-columns: repeat(autofit, minmax(400px, 1fr));
+}
+
+.text-carriers h1 {
+    color: var(--blue-h);
+}
+
+.text-carriers p {
+    margin-top: 2rem;
+    color: var(--blue-txt);
+    text-align: justify;
+}
+
+.text-carriers .box-1{
+   display: grid;
+   align-content: center;
+   justify-items: center;
+   padding: 1rem;
+}
+
+.text-carriers img {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media screen and (min-width: 964px) {
+    .text-carriers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text-carriers .box-1{
+        padding: 3rem;
+     }
+     
+}
+
+@media screen and (max-width: 964px) {
+    .text-carriers h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .text-carriers h1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .text-carriers p {
+        font-size: 12px;
+    }
+}
